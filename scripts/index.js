@@ -40,7 +40,7 @@ foodData.forEach((food) => {
     food.foodName
   } 사진" width="250">
     <h1 id="food-name">${food.foodName}</h1>
-    <p>${food.price.toLocaleString()}</p>
+    <p>${food.price.toLocaleString()} &#8361;</p>
     <button id="order-this" class="btn btn-primary" onclick="orderFood(${
       food.number
     })">주문하기</button>
@@ -67,7 +67,7 @@ function foodFind() {
   foodinfo.innerHTML += `<img src="${json.foodImage}" width=250>`;
   foodinfo.innerHTML += `<br><br>`;
   foodinfo.innerHTML += `<h1>${json.foodName}</h1>`;
-  foodinfo.innerHTML += `${json.price.toLocaleString()}원<br>`;
+  foodinfo.innerHTML += `${json.price.toLocaleString()} &#8361;<br>`;
   foodinfo.innerHTML += `<br>`;
   json.foodOption.forEach((option) => {
     console.log(option);
