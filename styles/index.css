@@ -1,0 +1,18 @@
+#food-img {
+    border-radius: 10px;
+}
+
+#food-info {
+    margin: 10px;
+}
+
+#food-info {
+    border: 1px solid rgb(235, 235, 235);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 9px 6px rgb(245, 245, 245);
+}
+
+button {
+    cursor: pointer;
+}
