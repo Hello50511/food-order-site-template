@@ -36,9 +36,14 @@ let foodData = [
 foodData.forEach((food) => {
   foodList.innerHTML += `
   <div id="food-info">
-    <img src="${food.foodImage}" id="food-img" alt="${food.foodName} 사진" width="250">
+    <img src="${food.foodImage}" id="food-img" alt="${
+    food.foodName
+  } 사진" width="250">
     <h1 id="food-name">${food.foodName}</h1>
-    <button id="order-this" class="btn btn-primary" onclick="orderFood(${food.number})">주문하기</button>
+    <p>${food.price.toLocaleString()}</p>
+    <button id="order-this" class="btn btn-primary" onclick="orderFood(${
+      food.number
+    })">주문하기</button>
   </div>
   `;
 });
